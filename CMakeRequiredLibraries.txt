@@ -1,0 +1,25 @@
+include(FindPkgConfig)
+
+##############################
+# Checking for Boost library #
+##############################
+#set(BOOST_ROOT "/opt/dev/")
+set(Boost_USE_STATIC_LIBS OFF)
+set(Boost_USE_MULTITHREADED ON)
+set(Boost_USE_STATIC_RUNTIME OFF)
+
+# Why Find Package Boost does not find this?
+
+if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+	set(BOOST_LIBRARYDIR "/usr/lib/x86_64-linux-gnu/")
+endif()
+
+find_package(Boost COMPONENTS python REQUIRED)
+
+message("Boost library:")
+message("Boost include dirs: ${Boost_INCLUDE_DIRS}")
+message("Boost library dirs: ${Boost_LIBRARY_DIRS}")
+message("Boost link libraries: ${Boost_LIBRARIES}")
+message("8<---------------------------------------")
+
+find_package(gcrypt REQUIRED)
