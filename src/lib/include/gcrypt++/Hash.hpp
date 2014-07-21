@@ -6,6 +6,8 @@
 namespace Gcrypp {
 
   class Hash {
+  private:
+    bool _uppercase;
   public:
     Hash();
     ~Hash() {}
