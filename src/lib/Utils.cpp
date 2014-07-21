@@ -1,5 +1,8 @@
 #include <iostream>
-#include <>
+#include <sstream>
+#include <iomanip>
+
+#include <gcrypt++/Utils.hpp>
 
 std::string Gcrypp::Utils::string_to_hex(std::string str)
 {

@@ -14,6 +14,6 @@ namespace Gcrypp {
 
   };
 
-} // namespace GCRYPTPP
+} // namespace Gcrypp
 
 #endif // _GCRYPTPP_HASH_

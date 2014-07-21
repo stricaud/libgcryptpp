@@ -6,6 +6,7 @@ include_directories(AFTER ${GCRYPT_HEADERS})
 
 set(gcrypt++_SRC_FILES
 Hash.cpp
+Utils.cpp
 )
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
